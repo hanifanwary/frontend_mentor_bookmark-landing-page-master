@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Bookmark landing page</title>
+
+    <!-- font -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gupter:wght@400;500;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link css -->
+    <link
+      rel="stylesheet"
+      href="../public/css/style.css"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    
+  </head>
+  <body class="font-Rubik">
+    <nav class="flex my-10 sm:my-5 sm:p-5">
+      <div>
+        <img
+        src="../images/logo-bookmark.svg"
+        alt=""
+        class="ml-5 max-w-2xl"
+      />
+      </div>
+      
+      <div class="flex ml-auto pr-5">
+        <button id="menu-toggle" class="mr-auto md:hidden xl:hidden lg:hidden"><img src="../images/icon-hamburger.svg" alt=""></button>
+      </div>
+      
+      <div class="ml-auto space-x-4 mr-5 sm:hidden xs:hidden md:block xl:block lg:block">
+        <a
+          href="#"
+          class="hover:text-Sred"
+          >Features</a
+        >
+        <a
+          href="#"
+          class="hover:text-Sred"
+          >Pricing</a
+        >
+        <a
+          href="#"
+          class="hover:text-Sred"
+          >Contact</a
+        >
+        <a
+          href="#"
+          class="p-3 px-5 hover:text-Sred hover:border-2 border-Sred rounded-md"
+          >Login</a
+        >
+      </div>
+
+      <!-- mobile -->
+       <div class="hidden fixed top-0 left-0 w-screen h-screen bg-gray-900 bg-opacity-90 text-white z-50 flex flex-col align-middle justify-center inset-0 md:hidden xl:hidden lg:hidden" id="mobile-menu">
+        <button id="menu-close" class="absolute top-4 right-4 text-white text-5xl focus:outline-none">&times;</button>
+      
+      <img src="../images/logo-bookmark.svg" alt="" class="w-60 absolute top-6 bg-white" />
+        <nav class="max-w-md flex flex-col space-y-6 mx-auto">
+        <a href="" class="text-4xl border-y-2 border-slate-400 text-center">Features</a>
+        <a href="" class="text-4xl border-y-2 border-slate-400 text-center">Pricing</a>
+        <a href="" class="text-4xl border-y-2 border-slate-400 text-center">Contact</a>
+        <a href="" class="text-4xl border-2 border-white text-white rounded-md py-5 px-16 text-center">Login</a>
+        </nav>
+        
+        <div class="max-w-md relative flex flex-row gap-10 mx-auto -bottom-32">
+          <a href="" class="hover:bg-red-400"><img src="../images/icon-facebook.svg" alt=""></a>
+        <a href="" class="hover:bg-red-400"><img src="../images/icon-twitter.svg" alt=""></a>
+        </div>
+       </div>
+    </nav>
+
+    <section class="flex flex-col pt-10 px-10 pb-2 xs:flex-col-reverse xs:items-center md:flex-row">
+      <div class="py-auto my-auto mx-auto xs:text-left text-center">
+        <h1 class="max-w-lg font-bold text-5xl xs:text-center">A Simple Bookmark Manager</h1>
+        <p class="max-w-md mt-3 font-extralight xs:text-center">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="max-w-md mt-5 mx-auto text-center m-3">
+          <a
+            href=""
+            class="text-Sblue border-2 border-Sblue rounded-md p-3 xs:text-sm xs:p-0 xs:px-1 xs:py-2"
+            >Get it on Chrome</a
+          >
+          <a
+            href=""
+            class="text-gray-600 border-2 border-gray-700 rounded-md p-3 xs:text-sm xs:p-0 xs:px-2 xs:py-2 "
+            >Get it on Firefox</a
+          >
+        </div>
+      </div>
+      <div class="w-2/4 h-80 bg-Sblue -z-10 absolute ml-[40rem] mt-32 rounded-l-full xs:h-40 xs:w-2/3 xs:mb-72 xs:ml-24 md:block md:w-2/4 md:ml-[40rem] md:h-80 md:mt-80"></div>
+      <img
+        src="../images/illustration-hero.svg"
+        alt=""
+        srcset=""
+        class="object-contain"
+      />
+    </section>
+
+    <section class="p-10">
+      <div class="max-w-md mx-auto text-center">
+        <h1 class="max-w-md font-bold text-3xl pb-5">Features</h1>
+        <p class="font-extralight">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
+      <div class="text-center mt-10 flex justify-center xs:flex-col md:flex-row">
+        <button
+          href=""
+          class="btn1 pb-5 px-5 border-b-2 border-gray-300 active:border-Sred hover:text-Sred"
+          data-title=" Bookmark in one click"
+          data-description="Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites"
+        >
+          Simple Bookmarking
+        </button>
+        <button
+          href=""
+          class="btn2 pb-5 px-5 border-b-2 border-gray-300 active:border-Sred hover:text-Sred"
+          data-title="More Info Intelligent"
+          data-description="search Our powerful search feature will help
+          you find saved sites in no time at all. No need to trawl through all of your bookmarks"
+        >
+          Speedy Searching
+        </button>
+        <button
+          href=""
+          class="btn3 pb-5 px-6 border-b-2 border-gray-300 active:border-Sred hover:text-Sred"
+          data-title="More Info Share"
+          data-description="your bookmarks Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a
+          button."
+        >
+          Easy Sharing
+        </button>
+      </div>
+      <div class="p-10 flex xs:flex-col gap-10 md:flex-row">
+        <div class="w-2/4 h-80 bg-Sblue -z-10 absolute -ml-[10rem] mt-20 rounded-r-full xs:h-36 xs:w-2/3 xs:mt-3 xs:mr-0 xs:-ml-14 md:block md:w-2/4 md:h-80 md:mt-12"></div>
+        <img
+          src="../images/illustration-features-tab-1.svg"
+          alt=""
+          srcset=""
+          class="object-contain"
+        />
+        <div class="flex flex-col justify-center mx-auto">
+          <h1
+            class="max-w-md font-bold text-3xl text-center"
+            id="feature-title"
+          >
+            Bookmark in one click
+          </h1>
+          <p
+            class="font-extralight max-w-md pb-3 text-center"
+            id="feature-description"
+          >
+            Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
+          </p>
+          <div class="mx-auto">
+            <button class="border-2 border-Sblue rounded-md bg-Sblue p-2 text-white">more info</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-10 mt-5">
+      <div class="max-w-xl mx-auto text-center">
+        <h1 class="font-bold text-3xl">Download The Extention</h1>
+        <p class="font-extralight">More Info Download the extension We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+      </div>
+
+      <div class="flex justify-center gap-8 mt-10 max-w-5xl mx-auto md:flex-row md:mx-auto xs:flex-col xs:max-w-md xs:mx-auto xs:ml-6">
+        <div class="w-60 pt-10 pb-10 flex flex-col items-center shadow-xl rounded-sm max-w-md">
+          <img
+            src="../images/logo-chrome.svg"
+            alt=""
+            srcset=""
+            class="mx-auto mb-5"
+          />
+          <div class="text-center">
+            <h3 class="font-bold text-xl">Add to Chrome</h3>
+            <p class="font-extralight">Minimum version 62</p>
+          </div>
+          <img
+            src="../images/bg-dots.svg"
+            alt=""
+            srcset=""
+            class="pt-5"
+          />
+          <button class="border-2 border-Sblue rounded-md bg-Sblue p-2 text-white mt-10 hover:text-Sblue hover:bg-transparent">Add & Install Extension</button>
+        </div>
+        <div class="max-w-md w-60 pt-10 pb-10 flex flex-col items-center shadow-xl rounded-sm">
+          <img
+            src="../images/logo-firefox.svg"
+            alt=""
+            srcset=""
+            class="mx-auto mb-5"
+          />
+          <div class="text-center">
+            <h3 class="font-bold text-xl">Add to Firefox</h3>
+            <p class="font-extralight">Minimum version 55</p>
+          </div>
+          <img
+            src="../images/bg-dots.svg"
+            alt=""
+            srcset=""
+            class="pt-5"
+          />
+          <button class="border-2 border-Sblue rounded-md bg-Sblue p-2 text-white mt-10 hover:text-Sblue hover:bg-transparent">Add & Install Extension</button>
+        </div>
+        <div class="w-60 pt-10 pb-10 flex flex-col items-center shadow-xl rounded-sm max-w-md">
+          <img
+            src="../images/logo-opera.svg"
+            alt=""
+            class="mx-auto mb-5"
+          />
+          <div class="text-center">
+            <h3 class="font-bold text-xl">Add to Opera</h3>
+            <p class="font-extralight">Minimum version 46</p>
+          </div>
+          <img
+            src="../images/bg-dots.svg"
+            alt=""
+            srcset=""
+            class="pt-5"
+          />
+          <button class="border-2 border-Sblue rounded-md bg-Sblue p-2 text-white mt-10 hover:text-Sblue hover:bg-transparent">Add & Install Extension</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-10 mt-10">
+      <div class="text-center mx-auto max-w-xl pb-5">
+        <h1 class="font-bold text-3xl">Frequently Asked Questions</h1>
+        <p class="font-extralight">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+      </div>
+      <div class="question1 max-w-md mx-auto border-y-2 border-slate-400 group">
+        <h3 class="pointer-events-auto group-hover:text-Sred">What is Bookmark? <span class="S1 float-right transform transition-transform duration-200">></span></h3>
+        <ul class="A1 hidden">
+          <li class="font-extralight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</li>
+        </ul>
+      </div>
+
+      <div class="question2 max-w-md mx-auto border-y-2 border-slate-400 group">
+        <h3 class="pointer-events-auto group-hover:text-Sred">How can I request a new browser? <span class="S2 float-right transform transition-transform duration-200">></span></h3>
+        <ul class="A2 hidden">
+          <li class="font-extralight">
+            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie
+            tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+          </li>
+        </ul>
+      </div>
+
+      <div class="question3 max-w-md mx-auto border-y-2 border-slate-400 group">
+        <h3 class="pointer-events-auto group-hover:text-Sred">Is there a mobile app? <span class="S3 float-right transform transition-transform duration-200">></span></h3>
+        <ul class="A3 hidden">
+          <li class="font-extralight">
+            Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.
+          </li>
+        </ul>
+      </div>
+
+      <div class="question4 max-w-md mx-auto border-y-2 border-slate-400 group">
+        <h3 class="pointer-events-auto group-hover:text-Sred">What about other Chromium browsers? <span class="S4 float-right transform transition-transform duration-200">></span></h3>
+        <ul class="A4 hidden">
+          <li class="font-extralight">
+            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit. More Info 35,000+ already joined Stay up-to-date with what we’re doing
+            Contact Us Features Pricing Contact
+          </li>
+        </ul>
+      </div>
+      <div class="flex justify-center pt-5">
+        <button class="border-2 border-Sblue rounded-md bg-Sblue p-2 text-white">more info</button>
+      </div>
+    </section>
+
+    <section class="max-w-screen-2xl p-20 mt-10 bg-Sblue flex flex-col items-center justify-center text-center">
+      <h5 class="text-sm text-white pb-5">35.000 ALREADY JOINED</h5>
+      <h3 class="max-w-xl text-4xl text-white pb-5 xs:text-2xl">Stay Up-To-Date With What Were Doing</h3>
+
+      <div>
+        <form class="" id="emailForm">
+          <input type="email" name="" id="emailInput" class="h-10" required> 
+          <img src="../images/icon-error.svg" class="errorImg absolute -mt-8 ml-48 hidden" alt="" srcset="">
+          <button type="submit" class="border-2 border-Sred rounded-md bg-white p-2 text-Sred hover:bg-white hover:text-Sred ">Contact Us</button>
+        </form>
+        <h6 id="errorMessage" class="hidden border-2 border-red-500 bg-red-500 text-white text-sm mt-1">Please enter a valid email address.</h6>
+      </div>
+    </section>
+
+    <footer class="max-w-screen-2xl p-5 flex bg-VDblue xs:flex-col xs:mx-auto md:flex-row md:content-center">
+      <div class="ml-60 xs:ml-0">
+        <img class="bg-white text-white xs:mx-auto" src="../images/logo-bookmark.svg" alt="" class="pr-5">
+      </div>
+      <div class="pl-3 flex gap-5 xs:flex-col xs:text-center md:flex-row">
+        <a href="#" class="text-white hover:text-Sred">Feature</a>
+        <a href="#" class="text-white hover:text-Sred">Pricing</a>
+        <a href="#" class="text-white hover:text-Sred">Contact</a>
+      </div>
+      <div class="flex gap-4 relative right-0 ml-auto xs:mx-auto xs:p-3 md:flex-row md:justify-end">
+        <a href="" class="hover:bg-red-400"><img src="../images/icon-facebook.svg" alt=""></a>
+        <a href="" class="hover:bg-red-400"><img src="../images/icon-twitter.svg" alt=""></a>
+      </div>
+      </p>
+    </footer>
+
+    <script src="../public/script.js"></script>
+  </body>
+</html>
